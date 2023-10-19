@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body {
+    background: url(uzay.webp);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*header css */
+.header{
+    background-color: rgb(168, 165, 165);
+    display: flex;
+    height: 110px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.header .title h1 {
+    color: aquamarine
+}
+.header .title h1 span {
+    color:rgb(179, 46, 46)
+}
+.header .nav ul li {
+    list-style-type: none;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    margin: 10px;
+    color: aqua;
+    font-size: 25px;
+}
+.header .nav ul li a:hover {
+    color: black;
+    cursor: pointer;
+}
+/* headar bitiş */
+
+/*ana içerik başlangıç*/
+
+.main {
+height: 50vh;
+width: 100%;
+margin-top: 40px;
+display: flex;
+justify-content: center;
+}
+.main .info 
+{
+    height: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+ }
+.main .info
+{
+    color: rgb(255, 145, 0);
+}
+.main .info p {
+    color: rgb(0, 255, 85);
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+.main .info p b {
+    color: rgb(119, 15, 216);
+    text-transform: capitalize;
+}
+.main .info button {
+    border: none;
+    background-color: rgb(226, 43, 43);
+    color: aliceblue;
+padding: 5px 10px;
+border-radius: 5px;    
+}
+.main .info button:hover
+ {
+ cursor: pointer;
+background-color: aqua;   
+}
+  
+
+   
+
+/*ana içerik bitiş*/
+/*TABLE ALANI*/
+.table-container {
+width: 80%;
+margin: 20px auto;
+
+}
+
+.table-container table {
+    width: 100%;
+    text-align: left;
+    margin-top: 100px;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 8px;
+    border: 2px solid rgb(20, 162, 35);
+    color: rgb(226, 43, 67);
+}
+th {
+    background-color: antiquewhite;
+}
+/* table alanı bitişi */
+/* form alanı başlangı.*/
+.form-container
+{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 100px;
+    color: rgb(226, 134, 43);
+
+    
+}
+label {
+    font-weight: bold;
+}
+#ad,
+#Email,
+textarea {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+
+    
+}
+.btn {
+    background-color: rgb(9, 177, 54);
+    color: aliceblue;
+    padding: 10px 20 px;
+    border:none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: blue;
+}
+/*form alanı bitiş*/
+
+/* footer alanı başlangıç */
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    height: 110px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*footer alnı bitiş*/
+/*mediaya sorgusu*/
+@media (max-width:800px)
+{
+    .header .nav {
+        display: none;
+    }
+    .header {
+        background-color: rgb(149, 0, 255);
+     }
+}
